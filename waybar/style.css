@@ -1,0 +1,182 @@
+@import "colors.css";
+
+* {
+    border: none;
+    border-radius: 5px;
+    font-family: "Rubik", "monospace";
+    font-size: 9.5pt;
+}
+
+window#waybar {
+    background: @base;
+    color: @text;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+tooltip {
+    background: @base;
+    border-radius: 10px;
+}
+tooltip label {
+    color: @text;
+}
+
+#window {
+    font-weight: bolder;
+    background: transparent;
+    color: @surface;
+    margin: 8px;
+    border-bottom: 1px solid @sky;
+    border-radius: 0px;
+    padding: 0px 4px;
+}
+window#waybar.empty #window {
+    background-color: transparent;
+    border: none;
+}
+
+#submap {
+    font-size: 13pt;
+}
+
+#workspaces {
+    padding: 0px 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background: @opacity;
+}
+#workspaces button {
+    padding: 0px 7px;
+    color: @surface;
+    border-radius: 999px;
+}
+#workspaces button:hover {
+    background: @surface;
+    color: @base;
+}
+
+#workspaces button.empty {
+    color: #444444;
+}
+#workspaces button.active {
+    background-image: linear-gradient(to right, @surface, @surface);
+}
+#workspaces button.active label {
+    color: @base;
+}
+
+#mpris,
+#clock,
+#tray,
+#submap,
+#custom-pacman,
+#custom-notification,
+#custom-,
+#custom-clip,
+#upower {
+    padding: 0px 6px;
+    margin: 5px 5px 5px 0px;
+}
+#mpris,
+#clock,
+#tray {
+    background: @opacity;
+    padding: 0px 8px;
+}
+
+#custom-icon {
+    color: @sky;
+    font-size: 16pt;
+    margin-right: 8px;
+}
+#idle_inhibitor {
+    font-size: 16pt;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+#idle_inhibitor:hover {
+    color: @surface;
+}
+#custom-color,
+#custom-power,
+#custom-screenshot
+{
+    font-size: 11pt;
+    margin-right: 15px;
+    margin-left: 5px;
+}
+#custom-screenshot {
+    font-size: 14pt;
+}
+#custom-screenshot:hover {
+    color: @surface;
+}
+#custom-color:hover {
+    color: @surface;
+}
+#custom-power:hover {
+    color: @surface;
+}
+#tray {
+    margin: 5px 0px 5px 0px;
+}
+
+#mpris.paused {
+    background: @opacity;
+}
+#mpris.playing {
+    background-image: linear-gradient(to right, @blue, @sky);
+    color: @base;
+}
+
+#upower {
+    color: @green;
+}
+#upower:hover {
+    background: @green;
+    color: @base;
+}
+#upower.charging {
+    background: @green;
+    color: @base;
+}
+
+#clock {
+    color: @text;
+}
+#clock:hover {
+    background: @surface;
+    color: @base;
+}
+
+#custom-pacman {
+    color: @sky;
+}
+#custom-pacman:hover {
+    background: @sky;
+    color: @base;
+}
+#custom-notification {
+    font-size: 12pt;
+    font-weight: 500;
+    color: @teal;
+}
+#custom-notification:hover {
+    color: @surface;
+}
+
+#custom-clip {
+    font-size: 13pt;
+    margin-right: 10px;
+}
+#custom-clip:hover {
+    color: @surface;
+}
+
+#custom-power {
+    font-size: 12pt;
+    color: @red;
+}
